@@ -6,6 +6,7 @@ INVENTura
 Ime i prezime   | E-mail adresa (FOI) | JMBAG      | Github korisničko ime
 --------------  | ------------------- | ---------- | ---------------------
 Vid Tomljenović | vtomljeno@foi.hr    | 0016137275 | VidTomljenovic
+Kristina Glavan | kglavan@foi.hr      |            | Kristina-Glavan
 
 
 ## Opis domene
