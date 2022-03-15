@@ -19,6 +19,7 @@ Mogućnost stvaranja novog korisnika te prijava kao kupac ili administrator. Kup
 Oznaka | Naziv | Kratki opis        | Odgovorni član tima
 ------ | ----- | ------------------ | -------------------
                                         Vid Tomljenović
+                                        Kristina Glavan
 F01 | stvaranje korisnika           | otvaranjem aplikacije dobiva se izbor stvaranja novog profila ili prijave u postojeći 
 F02 | prijava                       | odabirom prijave u postojeći račun dobiva se forma "Login-a"
 F03 | izbor i pregled proizvoda     | korisnik odnosno kupac dobiva uvid u različite proizvode, hranu koje može naručiti, recimo svi proizvodi, najpopularniji, veganski itd.
