@@ -18,15 +18,13 @@ Mogućnost stvaranja novog korisnika te prijava kao kupac ili administrator. Kup
 
 Oznaka | Naziv | Kratki opis        | Odgovorni član tima
 ------ | ----- | ------------------ | -------------------
-                                        Vid Tomljenović
-                                        Kristina Glavan
-F01 | stvaranje korisnika           | otvaranjem aplikacije dobiva se izbor stvaranja novog profila ili prijave u postojeći 
-F02 | prijava                       | odabirom prijave u postojeći račun dobiva se forma "Login-a"
-F03 | izbor i pregled proizvoda     | korisnik odnosno kupac dobiva uvid u različite proizvode, hranu koje može naručiti, recimo svi proizvodi, najpopularniji, veganski itd.
-F04 | naručivanje proizvoda         | kupac može naručiti odabrani proizvod
-F05 | uvid u stanje zaliha i naručivanje namirnica | s administratorove strane moguć je uvid u stanje zaliha, namirnica kojima se raspolaže za slaganje konačnih proizvoda, moguća je narudžba namirnica kako bi se popunile zalihe 
-F06 | stvaranje / brisanje proizvoda | s administratorove strane moguće je napraviti nove proizvode od istih namirnica, ali i obrisati stare
-F07 | komentari | kupac može ostaviti komentar na proizvod
+F01    | stvaranje korisnika        | otvaranjem aplikacije dobiva se izbor stvaranja novog profila ili prijave u postojeći  | Vid Tomljenović
+F02    | prijava                    | odabirom prijave u postojeći račun dobiva se forma "Login-a"                           |  Vid Tomljenović
+F03    | izbor i pregled proizvoda  | korisnik odnosno kupac dobiva uvid u različite odjevne artikle                         |  Vid Tomljenović
+F04    | naručivanje artikala       | kupac može naručiti odabrani artikl                                                    | Kristina Glavan
+F05    | uvid u stanje zaliha i naručivanje namirnica | s administratorove strane moguć je uvid u stanje zaliha, kojima se raspolaže za slaganje konačnih proizvoda, moguća je narudžba artikala kako bi se popunile zalihe                                                                       |  Kristina Glavan
+F06    | stvaranje / brisanje proizvoda | s administratorove strane moguće je dodati nove artikle i obrisati stare           | Kristina Glavan
+F07    | komentari | kupac može ostaviti komentar na artikl                                                                  | Kristina Glavan & Vid Tomljenović
 
 ## Tehnologije i oprema
-MySQL, MS Visual Studio 
+MySQL, MS Visual Studio, Figma
