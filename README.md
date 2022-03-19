@@ -22,8 +22,8 @@ F01    | stvaranje korisnika        | otvaranjem aplikacije dobiva se izbor stva
 F02    | prijava                    | odabirom prijave u postojeći račun dobiva se forma "Login-a"                           |  Vid Tomljenović
 F03    | izbor i pregled proizvoda  | korisnik odnosno kupac dobiva uvid u različite odjevne artikle                         |  Vid Tomljenović
 F04    | naručivanje artikala       | kupac može naručiti odabrani artikl                                                    | Kristina Glavan
-F05    | uvid u stanje zaliha i naručivanje namirnica | s administratorove strane moguć je uvid u stanje zaliha, kojima se raspolaže za slaganje konačnih proizvoda, moguća je narudžba artikala kako bi se popunile zalihe                                                                       |  Kristina Glavan
-F06    | stvaranje / brisanje proizvoda | s administratorove strane moguće je dodati nove artikle i obrisati stare           | Kristina Glavan
+F05    | uvid u stanje zaliha i naručivanje artikala | s administratorove strane moguć je uvid u stanje zaliha, kojima se raspolaže za slaganje konačnih proizvoda, moguća je narudžba artikala kako bi se popunile zalihe                                                                       |  Kristina Glavan
+F06    | stvaranje / brisanje artikala | s administratorove strane moguće je dodati nove artikle i obrisati stare           | Kristina Glavan
 F07    | komentari | kupac može ostaviti komentar na artikl                                                                  | Kristina Glavan & Vid Tomljenović
 
 ## Tehnologije i oprema
