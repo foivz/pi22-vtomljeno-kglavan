@@ -13,7 +13,7 @@ Kristina Glavan | kglavan@foi.hr      | 0016123743 | Kristina-Glavan
 Projekt pokriva problem provođenja inventure odnosno brojanja zaliha na tzv. "daily", "weekly", "monthly" bazama na način ažuriranja stanja zaliha svaki puta kada kupac naručuje proizvod. 
 
 ## Specifikacija projekta
-Mogućnost stvaranja novog korisnika te prijava kao kupac ili administrator. Kupac ima mogućnost naručivanja prehrambenog proizvoda kroz aplikaciju dok administrator ima mogućnost stvaranja novih proizvoda i brisanja starih. Zalihe bi se u bazi ažurirale, pa bi sustav slao povratnu informaciju o stanju namirnica (vidljivo naravno samo administratoru) u stvarnome vremenu. Ovim putem bi se smanjile potrebe za "ručnim brojanjem" te olakšalo naručivanje potrebnih namirnica za budućnost od strane administratora. CRUD rad s bazom je pokriven onda na način da kupac R(ead) koje proizvode, sendviče može naručiti, dok administrator može C(reate) nove, D(elete) stare i U(pdate) zalihe namirnica kako bi zadržao prodaju i kompetentnost na tržištu.   
+Mogućnost stvaranja novog korisnika te prijava kao kupac ili administrator. Kupac ima mogućnost naručivanja odjevnog artikla kroz aplikaciju. Zalihe bi se u bazi ažurirale, pa bi sustav slao povratnu informaciju o stanju namirnica (vidljivo naravno samo administratoru) u stvarnome vremenu. Ovim putem bi se smanjile potrebe za "ručnim brojanjem" te olakšalo naručivanje potrebnih arrtikala za budućnost od strane administratora. CRUD rad s bazom je pokriven onda na način da kupac R(ead) koje artikle može naručiti, dok administrator može C(reate) nove, D(elete) stare i U(pdate) zalihe kako bi zadržao prodaju i kompetentnost na tržištu.   
 
 
 Oznaka | Naziv | Kratki opis        | Odgovorni član tima
@@ -23,7 +23,7 @@ F02    | prijava                    | odabirom prijave u postojeći račun dobiv
 F03    | izbor i pregled proizvoda  | korisnik odnosno kupac dobiva uvid u različite odjevne artikle                         |  Vid Tomljenović
 F04    | naručivanje artikala       | kupac može naručiti odabrani artikl                                                    | Kristina Glavan
 F05    | uvid u stanje zaliha i naručivanje artikala | s administratorove strane moguć je uvid u stanje zaliha, kojima se raspolaže za slaganje konačnih proizvoda, moguća je narudžba artikala kako bi se popunile zalihe                                                                       |  Kristina Glavan
-F06    | stvaranje / brisanje artikala | s administratorove strane moguće je dodati nove artikle i obrisati stare           | Kristina Glavan
+F06    | stvaranje / brisanje artikala | s administratorove strane moguće je ažurirati artikle                               | Kristina Glavan
 F07    | komentari | kupac može ostaviti komentar na artikl                                                                  | Kristina Glavan & Vid Tomljenović
 
 ## Tehnologije i oprema
