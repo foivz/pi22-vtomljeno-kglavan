@@ -13,7 +13,7 @@ Kristina Glavan | kglavan@foi.hr      | 0016123743 | Kristina-Glavan
 Projekt pokriva problem provođenja inventure odnosno brojanja zaliha na tzv. "daily", "weekly", "monthly" bazama na način ažuriranja stanja zaliha svaki puta kada kupac naručuje proizvod. 
 
 ## Specifikacija projekta
-Mogućnost stvaranja novog korisnika te prijava kao kupac ili administrator. Kupac ima mogućnost naručivanja odjevnog artikla kroz aplikaciju. Zalihe bi se u bazi ažurirale, pa bi sustav slao povratnu informaciju o stanju namirnica (vidljivo naravno samo administratoru) u stvarnome vremenu. Ovim putem bi se smanjile potrebe za "ručnim brojanjem" te olakšalo naručivanje potrebnih arrtikala za budućnost od strane administratora. CRUD rad s bazom je pokriven onda na način da kupac R(ead) koje artikle može naručiti, dok administrator može C(reate) nove, D(elete) stare i U(pdate) zalihe kako bi zadržao prodaju i kompetentnost na tržištu.   
+Mogućnost stvaranja novog korisnika te prijava kao kupac ili administrator. Kupac ima mogućnost naručivanja odjevnog artikla kroz aplikaciju. Zalihe bi se u bazi ažurirale, pa bi sustav slao povratnu informaciju o stanju artikala (vidljivo naravno samo administratoru) u stvarnome vremenu. Ovim putem bi se smanjile potrebe za "ručnim brojanjem" te olakšalo naručivanje potrebnih arrtikala za budućnost od strane administratora. CRUD rad s bazom je pokriven onda na način da kupac R(ead) koje artikle može naručiti, dok administrator može C(reate) nove, D(elete) stare i U(pdate) zalihe kako bi zadržao prodaju i kompetentnost na tržištu.   
 
 
 Oznaka | Naziv | Kratki opis        | Odgovorni član tima
