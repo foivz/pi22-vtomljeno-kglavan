@@ -18,13 +18,12 @@ Mogućnost stvaranja novog korisnika te prijava kao kupac ili administrator. Kup
 
 Oznaka | Naziv | Kratki opis        | Odgovorni član tima
 ------ | ----- | ------------------ | -------------------
-F01    | stvaranje korisnika        | otvaranjem aplikacije dobiva se izbor stvaranja novog profila ili prijave u postojeći  | Vid Tomljenović
-F02    | prijava                    | odabirom prijave u postojeći račun dobiva se forma "Login-a"                           |  Vid Tomljenović
-F03    | izbor i pregled proizvoda  | korisnik odnosno kupac dobiva uvid u različite odjevne artikle                         |  Vid Tomljenović
-F04    | naručivanje artikala       | kupac može naručiti odabrani artikl                                                    | Kristina Glavan
-F05    | uvid u stanje zaliha i naručivanje artikala | s administratorove strane moguć je uvid u stanje zaliha, kojima se raspolaže za slaganje konačnih proizvoda, moguća je narudžba artikala kako bi se popunile zalihe                                                                       |  Kristina Glavan
-F06    | stvaranje / brisanje artikala | s administratorove strane moguće je ažurirati artikle                               | Kristina Glavan
-F07    | komentari | kupac može ostaviti komentar na artikl                                                                  | Kristina Glavan & Vid Tomljenović
+F01    | stvaranje korisnika prijava korisnika       | otvaranjem aplikacije dobiva se izbor stvaranja novog profila ili prijave u postojeći, odabirom prijave u postojeći račun dobiva se forma "Login-a"  | Vid Tomljenović                 
+F02    | izbor i pregled proizvoda  | korisnik odnosno kupac dobiva uvid u različite odjevne artikle  koji su naravno različitih veličina, cijena | Vid Tomljenović
+F03    | naručivanje artikala       | kupac može naručiti odabrani artikl, a za isti mu se generira generic račun | Vid Tomljenović
+F04    | uvid u stanje zaliha i naručivanje artikala | s administratorove strane moguć je uvid u stanje zaliha, kojima se raspolaže za slaganje konačnih proizvoda, moguća je narudžba artikala kako bi se popunile zalihe                                                                       | Kristina Glavan
+F05    | stvaranje / brisanje artikala | s administratorove strane moguće je ažurirati artikle                               | Kristina Glavan
+F06    | komentari | kupac može ostaviti komentar na artikl za druge kupce kako bi mogli isti pročitati i dobiti više stvarnih informacija | Kristina Glavan
 
 ## Tehnologije i oprema
 MySQL, MS Visual Studio, Figma
