@@ -26,4 +26,4 @@ F05    | stvaranje / brisanje artikala | s administratorove strane moguće je a�
 F06    | komentari | kupac može ostaviti komentar na artikl za druge kupce kako bi mogli isti pročitati i dobiti više stvarnih informacija | Kristina Glavan
 
 ## Tehnologije i oprema
-MySQL, MS Visual Studio, Figma
+MySQL, MS Visual Studio, Figma, Apache NetBeans, phpMyAdmin
