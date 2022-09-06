@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\CefSharp.Common.103.0.120\build\CefSharp.Common.props" Condition="Exists('..\packages\CefSharp.Common.103.0.120\build\CefSharp.Common.props')" />
+  <Import Project="..\packages\cef.redist.x86.103.0.12\build\cef.redist.x86.props" Condition="Exists('..\packages\cef.redist.x86.103.0.12\build\cef.redist.x86.props')" />
+  <Import Project="..\packages\cef.redist.x64.103.0.12\build\cef.redist.x64.props" Condition="Exists('..\packages\cef.redist.x64.103.0.12\build\cef.redist.x64.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91DE9792-7F33-4C70-8221-BFB47B44C8F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PI___INVENTura___kglavan_vtomljeno</RootNamespace>
+    <AssemblyName>PI - INVENTura - kglavan vtomljeno</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Braintree, Version=5.13.0.0, Culture=neutral, PublicKeyToken=31b586f34d3e96c7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Braintree.5.13.0\lib\net452\Braintree.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp, Version=103.0.120.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.103.0.120\lib\net452\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.Core, Version=103.0.120.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.103.0.120\lib\net452\CefSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.WinForms, Version=103.0.120.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.WinForms.103.0.120\lib\net462\CefSharp.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicPDF.CoreSuite, Version=11.33.0.46690, Culture=neutral, PublicKeyToken=09b5ce0d5c0a9d8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ceTe.DynamicPDF.CoreSuite.NET.11.33.0\lib\net40\DynamicPDF.CoreSuite.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Desktop\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet.Async, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Renci.SshNet.Async.1.4.0\lib\net40\Renci.SshNet.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forme\Izbor_placanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Izbor_placanja.Designer.cs">
+      <DependentUpon>Izbor_placanja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Hvala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Hvala.Designer.cs">
+      <DependentUpon>Hvala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Haljine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Haljine.Designer.cs">
+      <DependentUpon>Haljine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Hlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Hlace.Designer.cs">
+      <DependentUpon>Hlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klase\itemmodel.cs" />
+    <Compile Include="Forme\Kosarica .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Kosarica .Designer.cs">
+      <DependentUpon>Kosarica .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Majice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Majice.Designer.cs">
+      <DependentUpon>Majice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klase\shareddata.cs" />
+    <Compile Include="Forme\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>newdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Obuca .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Obuca .Designer.cs">
+      <DependentUpon>Obuca .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Pocetni_zaslon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Pocetni_zaslon.Designer.cs">
+      <DependentUpon>Pocetni_zaslon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Prijava_ili_registracija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Prijava_ili_registracija.Designer.cs">
+      <DependentUpon>Prijava_ili_registracija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Prijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Prijava.Designer.cs">
+      <DependentUpon>Prijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Pregled_majice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Pregled_majice.Designer.cs">
+      <DependentUpon>Pregled_majice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Registracija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Registracija.Designer.cs">
+      <DependentUpon>Registracija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Zaboravljena_lozinka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Zaboravljena_lozinka.Designer.cs">
+      <DependentUpon>Zaboravljena_lozinka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klase\Program.cs" />
+    <Compile Include="Forme\Pregled_haljine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Pregled_haljine.Designer.cs">
+      <DependentUpon>Pregled_haljine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Pregled_hlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Pregled_hlace.Designer.cs">
+      <DependentUpon>Pregled_hlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Pregled_obuca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Pregled_obuca.Designer.cs">
+      <DependentUpon>Pregled_obuca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Placanje_kartica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Placanje_kartica.Designer.cs">
+      <DependentUpon>Placanje_kartica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forme\Haljine.resx">
+      <DependentUpon>Haljine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Hlace.resx">
+      <DependentUpon>Hlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Kosarica .resx">
+      <DependentUpon>Kosarica .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Majice.resx">
+      <DependentUpon>Majice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Obuca .resx">
+      <DependentUpon>Obuca .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Pocetni_zaslon.resx">
+      <DependentUpon>Pocetni_zaslon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Prijava_ili_registracija.resx">
+      <DependentUpon>Prijava_ili_registracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Prijava.resx">
+      <DependentUpon>Prijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Pregled_majice.resx">
+      <DependentUpon>Pregled_majice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Registracija.resx">
+      <DependentUpon>Registracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Zaboravljena_lozinka.resx">
+      <DependentUpon>Zaboravljena_lozinka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Izbor_placanja.resx">
+      <DependentUpon>Izbor_placanja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Pregled_haljine.resx">
+      <DependentUpon>Pregled_haljine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Pregled_hlace.resx">
+      <DependentUpon>Pregled_hlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Pregled_obuca.resx">
+      <DependentUpon>Pregled_obuca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Hvala.resx">
+      <DependentUpon>Hvala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Placanje_kartica.resx">
+      <DependentUpon>Placanje_kartica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="newdbDataSet.xsc">
+      <DependentUpon>newdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="newdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>newdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="newdbDataSet.xss">
+      <DependentUpon>newdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\kosaricaklasa.artikl.datasource" />
+    <None Include="Properties\DataSources\probamajicenext.Proizvod.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Payment_UI.css" />
+    <Content Include="Payment_UI.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\cef.redist.x64.103.0.12\build\cef.redist.x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.103.0.12\build\cef.redist.x64.props'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x86.103.0.12\build\cef.redist.x86.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.103.0.12\build\cef.redist.x86.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.103.0.120\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.103.0.120\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.103.0.120\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.103.0.120\build\CefSharp.Common.targets'))" />
+  </Target>
+  <Import Project="..\packages\CefSharp.Common.103.0.120\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.103.0.120\build\CefSharp.Common.targets')" />
+</Project>
