@@ -29,7 +29,7 @@ Debug       Contains libcef.dll, libcef.lib and other components required to
 include     Contains all required CEF header files.
 
 libcef_dll  Contains the source code for the libcef_dll_wrapper static library
-            that all applications using the CEF C++ API must link against.
+            that all applications using the CEF C++ API must link against. (not included)
 
 Release     Contains libcef.dll, libcef.lib and other components required to
             build and run the release version of CEF-based applications. By
